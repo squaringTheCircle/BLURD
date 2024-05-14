@@ -1,0 +1,8 @@
+SD_CHECKPOINT: "models/sd/realisticVisionV51_v51VAE.safetensors"
+DEPTH_CHECKPOINT: "models/controlnet/control_sd15_depth.pth"
+DEPTH_CONFIG: "models/controlnet/control_sd15_depth.yml"
+NORMAL_CHECKPOINT: "models/controlnet/control_v11p_sd15_normalbae.pth"
+NORMAL_CONFIG: "models/controlnet/control_v11p_sd15_normalbae.yml"
+T2IADATOR_CHECKPOINT: "TencentARC/t2iadapter_color_sd14v1"
+ROOT_DIR: ""
+SAVE_DIR: ""
