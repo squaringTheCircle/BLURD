@@ -1,0 +1,3 @@
+[submodule "src/BLURDMask"]
+	path = src/BLURDMask
+	url = git@github.com:squaringTheCircle/BLURDMask.git
