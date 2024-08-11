@@ -2,7 +2,7 @@
 
 <div align='center' >
 
-[**Website**](https://www.blurd.xyx) | [**Datasets**](https://www.blurd.xyz/datasets)
+[**Website**](https://www.blurd.xyz) | [**Datasets**](https://www.blurd.xyz/datasets)
 
 </div>
 
