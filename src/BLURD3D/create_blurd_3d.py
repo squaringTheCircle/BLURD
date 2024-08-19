@@ -67,6 +67,12 @@ def update_hair_color(obj, color):
         obj.lightness.value = 4.0
         obj.hue.value = get_hair_hue(color)
 
+def update_eye_color(obj, color):
+    obj.iris_color.value = color
+
+def update_skin_color(human, tone):
+    # tone should be between 0-1, with 0 being the darkest and 1 the lightest 
+    human.skin.tone.value = tone   
 
 def get_control_node(node_tree, control_node_name):
     control = [
@@ -287,7 +293,7 @@ for gender in GENDERS:
                         update_hair_color(human.hair.regular_hair, hair_color)
 
                     # Change eye colour
-                    human.eyes.iris_color.value = EYE_COLOR[eye_color]
+                    update_eye_color(human.eyes, EYE_COLOR[eye_color])
 
                     # Gender specific changes
                     if gender == "female":
