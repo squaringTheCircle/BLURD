@@ -27,6 +27,17 @@ os.makedirs(root_path, exist_ok=True)
 json_fname = os.path.join(root_path, "rendered_dataset.json")
 
 
+def change_expression(human, expression):
+    # change the facial expression.
+    if expression not in EXPRESSIONS:
+        return
+    category = EXPRESSIONS[expression]
+    for npz in human.expression.get_options(category=category, context=C):
+        expression = expression.replace(" ", "_")
+        if expression in os.path.basename(npz):
+            human.expression.set(npz)
+
+
 def change_file_outputs(render_uuid, gender):
     scene = C.scene
     for node in scene.node_tree.nodes:
@@ -67,12 +78,15 @@ def update_hair_color(obj, color):
         obj.lightness.value = 4.0
         obj.hue.value = get_hair_hue(color)
 
+
 def update_eye_color(obj, color):
     obj.iris_color.value = color
 
+
 def update_skin_color(human, tone):
-    # tone should be between 0-1, with 0 being the darkest and 1 the lightest 
-    human.skin.tone.value = tone   
+    # tone should be between 0-1, with 0 being the darkest and 1 the lightest
+    human.skin.tone.value = tone
+
 
 def get_control_node(node_tree, control_node_name):
     control = [

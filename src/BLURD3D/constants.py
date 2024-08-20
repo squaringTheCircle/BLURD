@@ -60,3 +60,22 @@ EYE_COLOR = {
 }
 WORLD_HDRS = ["alps_field", "lebombo"]
 WORLD_ROTATION = [0.0, 45.0, 90.0]
+
+EXPRESSIONS = {
+    "constipated": "Expressive",
+    "unpleasant surprise": "Expressive",
+    "slightly disgusted": "Expressive",
+    "flabbergasted": "Expressive",
+    "angry yell": "Expressive",
+    "surprised smile": "Happy",
+    "happy smile": "Happy",
+    "big surprise": "Happy",
+    "cheeky smile": "Happy",
+    "intrigued": "Neutral",
+    "talking": "Neutral",
+    "kiss": "Neutral",
+    "concentrated": "Neutral",
+    "slight surprise": "Neutral",
+    "kiss closed eyes": "Neutral",
+    "sad smile": "Sad",
+}
